@@ -16,7 +16,10 @@ public interface ProductDao {
 	
 	List<Product> retrieveAll() throws ProductNotFoundException;
 	
+	List<Product> oderBy();
+	
 	Product update(Product product);
 	
 	Boolean delete(int id) throws ProductNotFoundException;
+	
 }

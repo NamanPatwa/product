@@ -69,4 +69,9 @@ public class ProductDaoImpl implements ProductDao {
 		return true;
 	}
 
+	@Override
+	public List<Product> oderBy() {
+		return mgr.createNamedQuery("sortBy").getResultList();
+	}
+
 }
